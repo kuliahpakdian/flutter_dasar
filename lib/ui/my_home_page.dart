@@ -12,7 +12,7 @@ class MyHomePage extends StatelessWidget {
       ),
       body: const Center(
         child: Text(
-          'Hello, World!',
+          'Halo Semuanya!',
         ),
       ),
     );
