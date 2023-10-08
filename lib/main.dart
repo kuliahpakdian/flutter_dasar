@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_dasar/ui/belajar_checkbox_page.dart';
+import 'package:flutter_dasar/ui/belajar_dropdown_page.dart';
 import 'package:flutter_dasar/ui/belajar_listener_page.dart';
 import 'package:flutter_dasar/ui/belajar_radio_page.dart';
 
@@ -17,7 +18,7 @@ class MainApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const BelajarListenerPage(title: 'Belajar Checkbox'),
+      home: const BelajarDropdownPage(title: 'Belajar Dropdown'),
     );
   }
 }
