@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'ui/belajar_gesture_page.dart';
+import 'package:flutter_dasar/ui/belajar_radio_page.dart';
 
 void main() {
   runApp(const MainApp());
@@ -15,7 +15,7 @@ class MainApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const BelajarGesturePage(title: 'Belajar Gesture'),
+      home: const BelajarRadioPage(title: 'Belajar Radio'),
     );
   }
 }
