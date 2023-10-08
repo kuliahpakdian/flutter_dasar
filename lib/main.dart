@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'ui/my_home_page.dart';
+import 'ui/belajar_gesture_page.dart';
 
 void main() {
   runApp(const MainApp());
@@ -15,7 +16,7 @@ class MainApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'Flutter Dasar'),
+      home: const BelajarGesturePage(title: 'Belajar Gesture'),
     );
   }
 }
