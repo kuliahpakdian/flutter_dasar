@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'ui/my_home_page.dart';
 import 'ui/belajar_gesture_page.dart';
 
 void main() {
