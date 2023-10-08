@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_dasar/ui/second_page.dart';
+import 'package:flutter_dasar/models/screen_arguments.dart';
 
 class MyHomePage extends StatefulWidget {
   final String title;
@@ -23,15 +23,20 @@ class _MyHomePageState extends State<MyHomePage> {
             const Text('Halaman Depan'),
             ElevatedButton(
               onPressed: () {
-                Navigator.push(
+                Navigator.pushNamed(context, '/second');
+              },
+              child: const Text('Menuju Halaman Kedua'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(
                   context,
-                  MaterialPageRoute(
-                    builder: (context) =>
-                        const SecondPage(title: 'Halaman Kedua'),
-                  ),
+                  '/withdata',
+                  arguments: ScreenArguments(
+                      'Judul dari home', 'isi Pesan dari halaman home'),
                 );
               },
-              child: const Text('Menuju Halaman Berikutnya'),
+              child: const Text('Menuju Halaman dgn Data'),
             ),
           ],
         ),

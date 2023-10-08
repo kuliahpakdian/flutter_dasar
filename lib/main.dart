@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_dasar/ui/with_data_page.dart';
+import 'ui/second_page.dart';
 import 'ui/my_home_page.dart';
 
 void main() {
@@ -15,7 +17,12 @@ class MainApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'Flutter Dasar'),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => MyHomePage(title: 'Halaman Depan'),
+        '/second': (context) => const SecondPage(title: 'Halaman Kedua'),
+        '/withdata': (context) => const WithDataPage(title: 'Dengan Data')
+      },
     );
   }
 }
