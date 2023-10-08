@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_dasar/ui/second_page.dart';
 
 class MyHomePage extends StatefulWidget {
   final String title;
@@ -9,15 +10,6 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  final namaController = TextEditingController();
-  String nama = '';
-
-  @override
-  void dispose() {
-    namaController.dispose();
-    super.dispose();
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -28,24 +20,19 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Padding(
-              padding: const EdgeInsets.all(20.0),
-              child: TextField(
-                controller: namaController,
-                decoration: const InputDecoration(
-                  hintText: 'Masukkan Nama Anda',
-                ),
-              ),
-            ),
+            const Text('Halaman Depan'),
             ElevatedButton(
               onPressed: () {
-                setState(() {
-                  nama = "Halo ${namaController.text}";
-                });
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) =>
+                        const SecondPage(title: 'Halaman Kedua'),
+                  ),
+                );
               },
-              child: const Text('Sapa'),
+              child: const Text('Menuju Halaman Berikutnya'),
             ),
-            Text(nama),
           ],
         ),
       ),
