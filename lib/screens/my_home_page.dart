@@ -4,24 +4,20 @@ class MyHomePage extends StatelessWidget {
   MyHomePage({super.key, required this.title});
 
   final String title;
-  final List<String> mahasiswa = [
-    'SI A',
-    'SI B',
-    'SI C',
-    'SI D',
-    'SI E',
-    'SI F',
-    'SI G',
-    'SI I',
-    'SI J',
-    'SI K',
-    'SI L',
-    'SI M',
-    'SI N',
-    'SI O',
-    'SI P',
-    'SI Q',
-    'SI R',
+  final List<String> ulama = [
+    'Abu Hanifah',
+    'Malik bin Anas',
+    'Asy-Syafi\'i',
+    'Ahmad bin Hanbal',
+    'Ibnu Taimiyah',
+    'Ibnul Qayyim al-Jauziyyah',
+    'Ibnu Katsir',
+    'Adz-Dzahabi',
+    'Muhammad Nashiruddin al-Albani',
+    'Abdul Aziz bin Abdullah bin Baz',
+    'Muhammad bin Shalih al-Utsaimin',
+    'Shalih bin Fauzan al-Fauzan',
+    'Abdurrazaq bin Abdul Muhsin al Badr',
   ];
 
   @override
@@ -30,13 +26,14 @@ class MyHomePage extends StatelessWidget {
       appBar: AppBar(
         title: Text(title),
       ),
-      body: ListView.builder(
-        padding: EdgeInsets.all(10),
-        itemCount: mahasiswa.length,
+      body: ListView.separated(
+        padding: const EdgeInsets.all(10),
+        itemCount: ulama.length,
+        separatorBuilder: (context,index)=>const Divider(),
         itemBuilder: (context,index){
           return Text(
-            '${mahasiswa[index]}',
-            style: TextStyle(fontSize: 30),
+            ulama[index],
+            style: const TextStyle(fontSize: 30),
             );
         },
       ),
