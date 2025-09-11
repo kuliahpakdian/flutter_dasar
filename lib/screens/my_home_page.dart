@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 class MyHomePage extends StatelessWidget {
-
   final String title;
 
   const MyHomePage({super.key, required this.title});
@@ -12,8 +11,117 @@ class MyHomePage extends StatelessWidget {
       appBar: AppBar(
         title: Text(title),
       ),
-      body: const Center(
-        child: Text('Halo Semuanyaa!'),
+      body: const Column(
+        children: [
+          Text(
+            'KuliahPakDian',
+            style: TextStyle(
+              fontSize: 30,
+            ),
+          ),
+          Text(
+            'KuliahPakDian',
+            style: TextStyle(
+              fontSize: 30,
+            ),
+          ),
+          Text(
+            'KuliahPakDian',
+            style: TextStyle(
+              fontSize: 30,
+            ),
+          ),
+          Text(
+            'KuliahPakDian',
+            style: TextStyle(
+              fontSize: 30,
+            ),
+          ),
+          Text(
+            'KuliahPakDian',
+            style: TextStyle(
+              fontSize: 30,
+            ),
+          ),
+          Text(
+            'KuliahPakDian',
+            style: TextStyle(
+              fontSize: 30,
+            ),
+          ),
+          Text(
+            'KuliahPakDian',
+            style: TextStyle(
+              fontSize: 30,
+            ),
+          ),
+          Text(
+            'KuliahPakDian',
+            style: TextStyle(
+              fontSize: 30,
+            ),
+          ),
+          Text(
+            'KuliahPakDian',
+            style: TextStyle(
+              fontSize: 30,
+            ),
+          ),
+          Text(
+            'KuliahPakDian',
+            style: TextStyle(
+              fontSize: 30,
+            ),
+          ),
+          Text(
+            'KuliahPakDian',
+            style: TextStyle(
+              fontSize: 30,
+            ),
+          ),
+          Text(
+            'KuliahPakDian',
+            style: TextStyle(
+              fontSize: 30,
+            ),
+          ),
+          Text(
+            'KuliahPakDian',
+            style: TextStyle(
+              fontSize: 30,
+            ),
+          ),
+          Text(
+            'KuliahPakDian',
+            style: TextStyle(
+              fontSize: 30,
+            ),
+          ),
+          Text(
+            'KuliahPakDian',
+            style: TextStyle(
+              fontSize: 30,
+            ),
+          ),
+          Text(
+            'KuliahPakDian',
+            style: TextStyle(
+              fontSize: 30,
+            ),
+          ),
+          Text(
+            'KuliahPakDian',
+            style: TextStyle(
+              fontSize: 30,
+            ),
+          ),
+          Text(
+            'KuliahPakDian',
+            style: TextStyle(
+              fontSize: 30,
+            ),
+          ),
+        ],
       ),
     );
   }
