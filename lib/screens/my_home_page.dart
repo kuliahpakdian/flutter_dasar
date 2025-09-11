@@ -11,8 +11,8 @@ class MyHomePage extends StatelessWidget {
       appBar: AppBar(
         title: Text(title),
       ),
-      body: const Column(
-        children: [
+      body: ListView(
+        children: const [
           Text(
             'KuliahPakDian',
             style: TextStyle(
